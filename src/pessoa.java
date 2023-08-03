@@ -1,20 +1,24 @@
 public class pessoa {
 
     //Atributos
-    String nome;
-    String CPF;
-    int RG;
-    int Telefone;
-    int Telefone_cont;
-    String Endereço;
+    private String nome;
+    private int CPF;
+    private int RG;
+    private float Telefone;
+    private float Telefone_cont;
+    private String Endereço;
 
-    public pessoa(String nome, String  CPF, int RG, int telefone, int telefone_cont, String endereço) {
+    public pessoa(String nome, int CPF, int RG, int telefone, int telefone_cont, String endereço) {
         this.nome = nome;
         this.CPF = CPF;
         this.RG = RG;
         Telefone = telefone;
         Telefone_cont = telefone_cont;
         Endereço = endereço;
+    }
+
+    public pessoa(String raquel, String CPF, int rg, float telefone, float telefone_cont, String endereco) {
+
     }
 
     public String getNome() {
@@ -27,7 +31,7 @@ public class pessoa {
     public String getCPF(){
         return getCPF();
     }
-    public void setCPF(String CPF) {
+    public void setCPF(int CPF) {
         this.CPF = CPF;
     }
 
@@ -39,7 +43,7 @@ public class pessoa {
         this.RG = RG;
     }
 
-    public int getTelefone() {
+    public float getTelefone() {
         return Telefone;
     }
 
@@ -47,7 +51,7 @@ public class pessoa {
         Telefone = telefone;
     }
 
-    public int getTelefone_cont() {
+    public float getTelefone_cont() {
         return Telefone_cont;
     }
 
